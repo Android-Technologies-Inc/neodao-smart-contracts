@@ -1,0 +1,209 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Create DAO (ACTUAL)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/n3-dao-test-contract-deployed.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/create-dao-actual.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },
+        {
+            "name": "Get DAO Summary by GUID",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-dao-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/get-dao-summary-by-guid.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },
+        {
+            "name": "Submit Proposal 1 (PARAMS)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-dao-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/submit-proposal-1-PARAMS.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },        
+        {
+            "name": "Submit Proposal 2 (PARAMS)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-proposal-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/submit-proposal-2-PARAMS.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },        
+        {
+            "name": "Submit Proposal ONE",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-dao-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/submit-proposal-1.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },
+        {
+            "name": "Submit Proposal TWO",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-dao-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/submit-proposal-2.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },    
+        {
+            "name": "Get Proposal ONE",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-proposal-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/get-proposal-summary-1.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },        
+        {
+            "name": "List ALL Proposals",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/two-proposals-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/list-all-proposals.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },                  
+        {
+            "name": "List All DAOs",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-proposal-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/list-all-daos.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },           
+        {
+            "name": "Create DAO (TRANSFER)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/n3-dao-test-contract-deployed.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/create-dao-transfer.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },           
+        {
+            "name": "Create DAO (Direct)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/n3-dao-test-contract-deployed.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/create-dao-direct.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },
+        {
+            "name": "Create DAO (DevHwak)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/n3-dao-test-contract-deployed.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/create-dao-devhawk.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },     
+        {
+            "name": "Show Pseudo Addresses",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/sc/N3DaoTestContract.nef",
+            "neo-express": "${workspaceFolder}/contracts/N3DaoTest/src/default.neo-express",
+            "checkpoint": "${workspaceFolder}/contracts/N3DaoTest/src/checkpoints/one-dao-added.neoxp-checkpoint",
+            "invocation": {
+                "invoke-file": "${workspaceFolder}/invoke-files/show-pseudo-addresses.neo-invoke.json"
+            },
+            "signers": [
+                "@bob"
+            ]
+        },           
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            // "program": "${workspaceFolder}/contracts/N3DaoTest/test/bin/Debug/net5.0/N3DaoTestContractTests.dll",
+            "program": "${workspaceFolder}/contracts/N3DaoTest/src/bin/Debug/N3DaoTestContract.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/contracts/N3DaoTest/src",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
